@@ -1,4 +1,4 @@
-// src/hooks/useBooks.js
+
 import { useState, useEffect } from "react";
 
 const useBooks = () => {
@@ -12,7 +12,7 @@ const useBooks = () => {
   }, [books]);
 
   const addBook = (book) => {
-    // Puedes usar un id único basado en Date.now o UUID
+    
     setBooks([...books, { ...book, id: Date.now(), read: false }]);
   };
 

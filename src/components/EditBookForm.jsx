@@ -1,9 +1,8 @@
-// src/components/EditBookForm.jsx
+
 import { useState, useContext } from "react";
 import { BookContext } from "../context/BookContext";
 
 const EditBookForm = ({ book, onCancel }) => {
-  // Inicializa los campos del formulario con los datos actuales del libro
   const [form, setForm] = useState({
     title: book.title,
     author: book.author,
@@ -19,9 +18,9 @@ const EditBookForm = ({ book, onCancel }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Llama a updateBook con los datos actualizados, conservando el id y la propiedad read
+   
     updateBook({ ...book, ...form });
-    onCancel(); // Cierra el formulario de edición
+    onCancel(); 
   };
 
   return (

@@ -1,11 +1,10 @@
-// src/components/BookList.jsx
+
 import { useState, useContext } from "react";
 import { BookContext } from "../context/BookContext";
 import EditBookForm from "./EditBookForm";
 
 const BookList = () => {
   const { books, removeBook, toggleRead } = useContext(BookContext);
-  // Estado para almacenar el ID del libro que se está editando
   const [editingBookId, setEditingBookId] = useState(null);
 
   const unreadBooks = books.filter((book) => !book.read);
@@ -52,7 +51,7 @@ const BookList = () => {
                   Editar
                 </button>
               </div>
-              {/* Muestra el formulario de edición solo para el libro seleccionado */}
+              {}
               {editingBookId === book.id && (
                 <EditBookForm
                   book={book}

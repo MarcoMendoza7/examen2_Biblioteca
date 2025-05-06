@@ -1,4 +1,4 @@
-// src/components/Filters.jsx
+
 import { useState, useContext } from "react";
 import { BookContext } from "../context/BookContext";
 
@@ -13,7 +13,6 @@ const Filters = () => {
     setFilter({ ...filter, [e.target.name]: e.target.value });
   };
 
-  // Filtra los libros en base a la búsqueda
   const filteredBooks = books.filter((book) =>
     book[filter.field].toLowerCase().includes(filter.term.toLowerCase())
   );

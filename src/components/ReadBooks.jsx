@@ -1,4 +1,4 @@
-// src/components/ReadBooks.jsx
+
 import { useContext } from "react";
 import { BookContext } from "../context/BookContext";
 
@@ -8,7 +8,7 @@ const ReadBooks = () => {
 
   return (
     <div className="mb-6">
-      {/* Título alineado a la izquierda con texto en verde claro */}
+      {}
       <h2 className="text-2xl font-bold text-green-400 mb-4">
         Libros Leídos
       </h2>

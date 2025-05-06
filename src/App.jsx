@@ -1,4 +1,4 @@
-// src/App.jsx
+
 import React from "react";
 import { BookProvider } from "./context/BookContext";
 import BookForm from "./components/BookForm";
@@ -9,10 +9,10 @@ import ReadBooks from "./components/ReadBooks";
 function App() {
   return (
     <BookProvider>
-      {/* Contenedor general con fondo en gradiente de verde fuerte a naranja fuerte */}
+      {}
       <div className="min-h-screen bg-gradient-to-r from-green-700 to-orange-700 p-8">
         
-        {/* Título centrado, en mayúsculas y con gradiente propio */}
+        {}
         <h1 className="text-4xl uppercase text-center font-bold mb-8 p-4 rounded shadow-lg bg-gradient-to-r from-green-500 to-orange-500 text-white">
           Gestor de Libros - Biblioteca
         </h1>
